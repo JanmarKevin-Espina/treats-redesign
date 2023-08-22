@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply m-0 p-0 box-border;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+html,
+body {
+  @apply h-full text-base font-text;
+}
+
+.main-wrapper {
+  @apply max-w-[1171px] mx-auto;
+}
+
+.button {
+  @apply flex items-center justify-center bg-primary rounded-[10px] px-2 pt-[11px] pb-[12px] min-w-[135px] h-[40px] font-header text-sm text-text-light font-medium;
+}
+
+.button.button--secondary {
+  @apply bg-secondary;
+}
+
+.horizontal-center {
+  @apply flex justify-center;
+}
+
+.vertical-center-between {
+  @apply flex items-center justify-between;
+}
+
+.vertical-center {
+  @apply flex items-center;
+}
+
+/* Header */
+.header {
+  @apply font-header;
+}
+
+  /* Header Top banner */
+.header__info {
+  @apply bg-crimson pt-[8px] pb-[7px] text-center text-xs text-white;
+}
+
+.header__info a {
+  @apply underline;
+}
+
+.header__wrapper {
+  @apply flex justify-between items-center min-h-[80px];
+}
+
+.header__inside {
+  @apply flex items-center;
+}
+  /* End Header Top banner */
+
+  /* Header Logo */
+  /* End Header Logo */
+
+  /* Header Nav */
+.nav__list {
+  @apply flex;
+}
+
+.nav__item {
+  @apply mx-[38px];
+}
+
+.nav__item:last-of-type {
+  @apply mr-0;
+}
+
+.nav__link {
+  @apply font-medium;
+}
+
+.header__center a {
+  @apply flex items-center font-medium;
+}
+
+.icon-user {
+  @apply w-[18px] h-[18px] bg-[url('../images/icon-user.png')] inline-block ml-[10px];
+}
+
+.icon-cart {
+  @apply w-5 h-5 bg-[url('../images/icon-cart.png')] inline-block ml-[10px];
+}
+
+  /* End Header Nav */
+/* End header */
+
+/* Banner */
+.banner {
+  @apply bg-[url('../images/herobanner.png')]  max-w-[1920px] h-[650px] mx-auto bg-[center_top] bg-no-repeat pb-[87px] px-5;
+}
+
+.banner__wrapper {
+  @apply flex items-end h-full;
+}
+
+.banner__card {
+  @apply max-w-[514px] font-header;
+}
+
+.banner__header {
+  @apply text-6xl text-[66px] text-secondary font-semibold;
+}
+
+.banner__second-header {
+  @apply text-4xl text-[#213241] font-semibold;
+}
+/* End Banner */
+
+/* Featured */
+.featured {
+  @apply bg-primary py-[33px];
+}
+
+.featured__header,
+.inside-box__header {
+  @apply font-header font-semibold text-crimson text-4xl text-center;
+}
+
+.featured__video {
+  @apply w-[600px] h-[338px] rounded-[20px];
+}
+/* End Featured */

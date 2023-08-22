@@ -1,0 +1,209 @@
+extends layout.pug
+
+block content
+  section.section
+    .banner
+      .banner__fill
+        img.banner__hero(src="../images/herobanner.png", alt="Banner treats")
+        img.banner__mobile(src="../images/herobanner-mobile.png", alt="Mobile Banner Treats")
+        .main-wrapper.main-wrapper--banner
+          .banner__card.animatedParent.animateOnce
+            .banner__header.animated.bounceInRight
+              h2 Snacks from 
+                br
+                | around the world
+              p delivered to your door monthly
+            .banner__cta.animated.bounceInLeft
+              button.button Give A Gift
+              button.button.button--secondary Give Started
+    .featured
+      .main-wrapper
+        .featured__wrapper
+          .featured__card
+            h3.featured__header As Featured In
+            .featured__logo-wrapper
+              ul.featured__logos
+                li.featured__logo
+                  img(src="../images/business-insider.png", alt="Business Insider")
+                li.featured__logo
+                  img(src="../images/Travel_+_Leisure_Co.png", alt="Travel Leisure")
+                li.featured__logo
+                  img(src="../images/New-York-Times-logo.png", alt="The New York Times")
+                li.featured__logo
+                  img(src="../images/cnbc.png", alt="CNBC")
+                li.featured__logo
+                  img(src="../images/thrillist-logo.png", alt="Thrillist")
+                li.featured__logo
+                  img(src="../images/Popsugar_Logo.png", alt="Popsugar")
+                li.featured__logo
+                  img(class="mx-auto" src="../images/TheArtofManlinessLogo.png", alt="Manliness")
+    .inside-box
+      .main-wrapper
+        .inside-box__wrapper
+          h3.inside-box__header Whats Inside The Box?
+          .inside-box__card.animatedParent.animateOnce
+            .inside-box__video-wrapper.animated.fadeInLeftShort
+              iframe.inside-box__video(src="https://www.youtube.com/embed/9TXyzeJJa4Y", title="YouTube video player", frameborder="0", allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen)
+            .inside-box__list-wrapper.animated.fadeInRightShort
+              .inside-box__list
+                .inside-number.
+                  1.
+                .inside-text.
+                  Hand-picked snacks from a different country delivered to you every month
+              .inside-box__list
+                .inside-number.
+                  2.
+                .inside-text
+                  | 5+ snacks in the Standard Box
+                  br
+                  | 10+ snacks in the Premium Box
+              .inside-box__list
+                .inside-number.
+                  3.
+                .inside-text.
+                  Our boxes include cookies, crackers, chocolates, candies, chips and more!
+              .inside-box__bottom
+                p.
+                  Sound Intriguing? Give it a try and order now!
+                button.button.button--secondary Treat Yourself
+    .work
+      .main-wrapper
+        .work__card
+          h2.work__header How it works?
+          .work__list.animatedParent.animateOnce(data-sequence='400')
+            .work__item.animated.fadeInRightShort(data-id='1')
+              img(src="../images/howitworks.png", alt="checkout")
+              h3 Subscribe
+              p As soon as we receive your order, we prepare your box of delicious international snacks to ship out the next business day!
+            .work__item.animated.fadeInRightShort(data-id='2')
+              img(src="../images/deliver.png", alt="deliver")
+              h3 We Deliver
+              p Your box will be picked up from our warehouse and delivered by your local post man
+            .work__item.animated.fadeInRightShort(data-id='3')
+              img(src="../images/treatsbox.png", alt="Treat box")
+              h3 Get Snacks!
+              p Open your box and commence on a delectable, culinary and cultural journey!
+    .testimony
+      .main-wrapper.main-wrapper--testimony
+        .testimony__card.animatedParent.animateOnce
+          .testimony__header
+            h3 What Customer 
+              br.testimony__separator
+              | Say About Treats
+          .testimony__cards.animated.bounceIn
+            .testimony__list
+              .multiple-items.js-single-item
+    .testimony-social
+      .main-wrapper
+        .testimony-social__list.animatedParent.animateOnce(data-sequence='500')
+          .testimony-social__card.animated.fadeInLeftShort(data-id='1')
+            a.testimony-social__link(href="#")
+              img(src="../images/user-1.png", alt="Treat user")
+          .testimony-social__card.animated.fadeInLeftShort(data-id='2')
+            a.testimony-social__link(href="#")
+              img(src="../images/user-2.png", alt="Treat user")
+          .testimony-social__card.animated.fadeInRightShort(data-id='2')
+            a.testimony-social__link(href="#")
+              img(src="../images/user-3.png", alt="Treat user")
+          .testimony-social__card.animated.fadeInRightShort(data-id='1')
+            a.testimony-social__link(href="#")
+              img(src="../images/user-4.png", alt="Treat user")
+        .testimony-social__list.testimony-social__list--mobile.js-carousel
+          .testimony-social__card
+            a.testimony-social__link(href="#")
+              img(src="../images/user-1.png", alt="Treat user")
+          .testimony-social__card
+            a.testimony-social__link(href="")
+              img(src="../images/user-2.png", alt="Treat user")
+          .testimony-social__card
+            a.testimony-social__link(href="")
+              img(src="../images/user-3.png", alt="Treat user")
+          .testimony-social__card
+            a.testimony-social__link(href="")
+              img(src="../images/user-4.png", alt="Treat user")
+    .explore
+      .main-wrapper
+        .explore__wrapper.animatedParent.animateOnce
+          .explore__card.animated.fadeInUp
+            .explore__header
+              .explore__header-right
+                h2 Explore Treats
+                p Discover new treats every month!
+              .explore__header-left
+                a(href="#") See All
+                  i.icon-r-arrow
+            .explore__list.js-country
+              .explore__item
+                a(href="#") 
+                  img(src="../images/asia.png", alt="asia")
+              .explore__item
+                a(href="#") 
+                  img(src="../images/latin-america.png", alt="latin-america")
+              .explore__item
+                a(href="#") 
+                  img(src="../images/australia.png", alt="australia")
+              .explore__item
+                a(href="#") 
+                  img(src="../images/europe.png", alt="europe")
+              .explore__item
+                a(href="#") 
+                  img(src="../images/europe.png", alt="europe")
+            .explore__bottom
+              .explore__nav.opacity-0
+                span.explore__pagination-dot.explore__pagination-dot--active
+                span.explore__pagination-dot
+                span.explore__pagination-dot
+                span.explore__pagination-dot
+                span.explore__pagination-dot
+              a.expore__link(href="#") See All 
+    .order
+      .main-wrapper.main-wrapper--order
+        .order__wrapper.animatedParent.animateOnce
+          .order__header
+            h2 Order Your Box Now 
+            p Free shipping in the US
+          .order__card
+            .order__img-wrapper.animated.fadeInLeftShort
+              img.order__img(src="../images/order-box.png", alt="Treat Box")
+            .order__box-list.animated.fadeInRightShort
+              a.order__box.order__box--active(href="#")
+                .order__box-text
+                  h3 Standard Box
+                  p As low as $14.95 per box!
+                .order__box-link Learn More
+                  i.icon-r-arrow-white
+              a.order__box(href="#")
+                .order__box-text
+                  h3 Premium Box
+                  p As low as $25.95 per box!
+                .order__box-link Learn More
+                  i.icon-r-arrow-white
+          .order__cta.animated.fadeInUp
+            button.button Give A Gift
+            span.order__separator Or
+            button.button.button--secondary Get Started
+    .join
+      .main-wrapper
+        .join__wrapper.animatedParent.animateOnce
+          .join__header
+            h2 Join The #TryTreats Family On Instagram
+            p Share photos of your Treats with us!
+          .join__card(data-sequence='500')
+            .join__item-wrapper.animated.fadeInLeftShort(data-id='1')
+              img.join__item(src="../images/join1.png", alt="Treats Instagram")
+            .join__item-wrapper.animated.fadeInLeftShort(data-id='2')
+              img.join__item(src="../images/join2.png", alt="Treats Instagram")
+            .join__item-wrapper.animated.fadeInRightShort(data-id='2')
+              img.join__item(src="../images/join3.png", alt="Treats Instagram")
+            .join__item-wrapper.animated.fadeInRightShort(data-id='1')
+              img.join__item(src="../images/join4.png", alt="Treats Instagram")
+          .join__card.join__card--mobile.js-carousel
+            .join__item-wrapper
+              img.join__item(src="../images/join1.png", alt="Treats Instagram")
+            .join__item-wrapper
+              img.join__item(src="../images/join2.png", alt="Treats Instagram")
+            .join__item-wrapper
+              img.join__item(src="../images/join3.png", alt="Treats Instagram")
+            .join__item-wrapper
+              img.join__item(src="../images/join4.png", alt="Treats Instagram")
+          button.button.button--secondary.animated.fadeInUp(class="mx-auto") Join Us Now

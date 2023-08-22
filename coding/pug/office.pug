@@ -1,0 +1,67 @@
+extends layout.pug
+
+block content
+  section.section
+    .office-banner
+      .office__banner-img-wrapper
+        img.office__banner-img(src="../images/office-desktop.png", alt="Office Chair")
+        img.office__banner-img--mobile(src="../images/office-mobile.png", alt="Office Chair")
+      .office__banner-wrapper
+        .main-wrapper
+          .office__banner-text
+            h2 Treats For Office
+            p Share the joy of flavors from around the world with your colleagues with international Treats delivered! Whether that's regular office treats or gifts for special events or the holidays, we've got you covered!
+    .office
+      .main-wrapper
+        .office-wrapper
+          h3.office__header Select Your Plan
+          .office__dev
+            .office__card-wrapper
+              .office__card
+                .office__card-header 
+                  .office__img-wrapper
+                    img(src="../images/icon-calendar.png", alt="Calendar")
+                  h3 Monthly Office 
+                    br.office__separator
+                    | Subscription
+                ul.office__list
+                  li.office__item
+                    i.icon__circle-check
+                    | Recurring Treats deliveries to the office monthly
+                  li.office__item
+                    i.icon__circle-check
+                    | Explore a different country every month
+                  li.office__item
+                    i.icon__circle-check
+                    | Cancel anytime
+              .office__card
+                .office__card-header 
+                  .office__img-wrapper
+                    img(src="../images/icon-calendar.png", alt="Calendar")
+                  h3 Office Gift 
+                    br.office__separator
+                    | (Non-Renewing)
+                ul.office__list
+                  li.office__item
+                    i.icon__circle-check
+                    | Gift Orders or Subscriptions that do not renew
+                  li.office__item
+                    i.icon__circle-check
+                    | Explore a different country for every box
+                  li.office__item
+                    i.icon__circle-check
+                    | Personalization Available
+            .office__form
+              .office__card.office__card--form
+                .office__card-header
+                  h3 Fill Out The Form
+                form.form(action="#")
+                  .input__wrapper
+                    select.form__input.form__input-select(placeholder="Number of Boxes Requested")
+                      option(value="") Office Subscription to Treats (Reccuring Delivery)
+                      option(value="") One-Time Office Gifts (Non-Recurring Delivery)
+                  .input__wrapper
+                    input.form__input(type="number" placeholder="Number of Boxes Requested")
+                  .input__wrapper
+                    input.form__input(type="email" placeholder="Email")
+                  button.button.button--secondary.w-full(class="mt-[30px]") Send

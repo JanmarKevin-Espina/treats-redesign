@@ -1,0 +1,24 @@
+extends credentials-layout.pug
+
+block content
+  section.section
+    .login
+      .login__wrapper
+        .login__card
+          img.login__logo(src="../images/logo.png", alt="Treats Logo")
+          .login__text
+            h2 Account Login
+            p Welcome back! 
+              br.hide-desktop
+              | Please login to your account.
+          form.form.mb-9(action="#")
+            .input__wrapper
+              input.form__input(type="text" placeholder="Email Address")
+            .input__wrapper
+              input.form__input(type="password" placeholder="Password")
+            div
+              a.login__forgot(href="#") Forgot Password?
+            button.button.button--secondary.w-full(class="mt-[30px]") Login
+          p.login__subscribe Don't have an account? 
+            a(href="#") Subscribe 
+            | to create one
