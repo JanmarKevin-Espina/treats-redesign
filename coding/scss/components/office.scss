@@ -1,0 +1,103 @@
+.office {
+  @apply pt-11 pb-[50px] tablet:pt-[92px] tablet:pb-[100px];
+}
+
+/* Office banner */
+.office__banner-img-wrapper {
+  @apply h-[400px] tablet:h-[250px];
+}
+
+.office__banner-img,
+.office__banner-img--mobile {
+  @apply w-full h-full object-cover;
+}
+
+.office__banner-img {
+  @apply hidden tablet:block;
+}
+
+.office__banner-img--mobile {
+  @apply block tablet:hidden;
+}
+
+.office-banner {
+  @apply relative;
+}
+
+.office-banner .main-wrapper {
+  @apply relative;
+}
+
+.office__banner-text {
+  @apply absolute bottom-0 text-text-light pb-[42px] tablet:pb-[63px] tablet:max-w-[670px];
+}
+
+.office__banner-text h2 {
+  @apply font-header font-semibold text-4xl text-center tablet:text-left tablet:text-[46px] leading-none;
+}
+
+/* end office banner */
+.office .input__wrapper:last-of-type input {
+  @apply mb-0;
+}
+
+.office__header {
+  @apply mb-[50px];
+}
+
+.office__dev {
+  @apply tablet:flex;
+}
+
+.office__card-wrapper,
+.office__form {
+  @apply tablet:w-1/2;
+}
+
+.office__card-wrapper {
+  @apply tablet:mr-[30px]
+}
+
+.office__card-header {
+  @apply text-center font-header font-semibold text-[26px] text-light-blue mb-[25px] tablet:flex tablet:items-center tablet:text-left;
+}
+
+.office__card {
+  @apply w-full rounded-[15px] bg-[#f1f1f1] pt-12 pb-10 px-[30px] mb-[54px] relative tablet:mb-[30px];
+}
+
+.office__card:nth-of-type(2) {
+  @apply mb-5 tablet:mb-0;
+}
+
+.office__card--form {
+  @apply px-5 pt-[25px] pb-[30px] mb-0 tablet:h-full tablet:flex tablet:flex-col tablet:justify-center;
+}
+
+.office__card--form h3 {
+  @apply tablet:text-center tablet:w-full;
+}
+
+.office__img-wrapper {
+  @apply absolute -top-[35px] left-1/2 -translate-x-1/2 tablet:static tablet:translate-x-0;
+}
+
+.office__img-wrapper img {
+  @apply tablet:w-[42px] tablet:h-[42px] tablet:mr-5;
+}
+
+.office__separator {
+  @apply tablet:hidden;
+}
+
+.office__item {
+  @apply flex items-center mb-6;
+}
+
+.office__item:last-of-type {
+  @apply mb-0;
+}
+
+.icon__circle-check {
+  @apply bg-[url('../images/check.png')] relative w-[22px] h-[22px] block pr-9 bg-no-repeat;
+}

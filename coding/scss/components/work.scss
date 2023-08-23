@@ -1,0 +1,31 @@
+.work {
+  @apply pb-[51px];
+}
+
+.work__list {
+  @apply mt-11 tablet:flex tablet:justify-between;
+}
+
+.work__item {
+  @apply text-center tablet:text-left mb-[41px] tablet:mb-0 tablet:max-w-[334px] tablet:w-full;
+}
+
+.work__item:nth-of-type(2) {
+  @apply tablet:mx-3;
+}
+
+.work__item:last-of-type {
+  @apply mb-0;
+}
+
+.work__item img {
+  @apply mx-auto mb-6 tablet:mx-0;
+}
+
+.work__item h3 {
+  @apply font-header font-semibold text-[26px] text-light-blue mb-[3px];
+}
+
+.work__item p {
+  color: rgba(0, 0, 0, 0.86);
+}
