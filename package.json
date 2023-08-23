@@ -1,13 +1,18 @@
 {
   "scripts": {
     "compilePug": "pug -w ./coding/pug -o ./coding/html -P",
+    "compileSass": "sass --watch ./coding/scss/app.scss ./coding/css/input.css",
     "compileCss": "npx tailwindcss -i ./coding/css/input.css -o ./coding/css/style.css --watch",
     "serve": "live-server --port=4000 --quiet --open=/coding/html/"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.15",
     "live-server": "^1.2.2",
+    "postcss": "^8.4.28",
+    "postcss-cli": "^10.1.0",
+    "postcss-easy-import": "^4.0.0",
     "pug": "^3.0.2",
-    "sass": "^1.64.2",
+    "sass": "^1.66.1",
     "tailwindcss": "^3.3.3"
   }
 }

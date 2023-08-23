@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './elements/elements';
+@import './components/button';
+@import './components/common';
+@import './components/header';
+@import './components/footer';
+@import './components/login';
+@import './components/banner';
+@import './components/featured';
+@import './components/inside-box';
+@import './components/work';
+@import './components/testimony';
+@import './components/explore';
+@import './components/order';
+@import './components/join';
+@import './components/office';

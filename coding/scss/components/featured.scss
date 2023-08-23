@@ -1,0 +1,27 @@
+.featured {
+  @apply bg-primary py-7 px-3 sp:px-8;
+}
+
+.featured__header {
+  @apply font-header text-white font-medium text-center;
+}
+
+.featured__logos {
+  @apply grid grid-cols-2 gap-x-8 sp:gap-x-[61px] gap-y-5 mt-4 items-center justify-items-center big:flex small:flex-wrap small:justify-center;
+}
+
+.featured__logo img {
+  @apply w-[113px] small:w-full;
+}
+
+.featured__logo:last-of-type {
+  grid-column: 1 / span 2;
+}
+
+.featured__logo:last-of-type img {
+  @apply w-[174px] small:w-full;
+}
+
+.featured__logo:nth-of-type(6) img {
+  @apply w-[138px] small:w-full;
+}

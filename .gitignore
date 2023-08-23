@@ -1,2 +1,5 @@
 /node_modules
 /.vscode
+/package-lock.json
+/coding/css/input.css.map
+/coding/css/style.css.map

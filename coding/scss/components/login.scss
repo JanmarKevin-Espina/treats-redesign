@@ -1,0 +1,53 @@
+.login {
+  @apply py-8 px-3 sp:px-6 h-full flex justify-center items-center;
+}
+
+.login__wrapper {
+  @apply w-full max-w-[328px] tablet:max-w-[490px] tablet:px-[30px] tablet:py-12 tablet:bg-[#f4f4f4] tablet:rounded-[20px];
+}
+
+.login__logo {
+  @apply hidden tablet:block tablet:mx-auto tablet:mb-[22px];
+}
+
+.login__text {
+  @apply text-center mb-9;
+}
+
+.login__text h2 {
+  @apply font-header font-semibold text-3xl;
+}
+
+.login__text p {
+  @apply font-text font-medium mx-auto;
+  color: rgba(0, 0, 0, 0.66);
+}
+
+.form__input {
+  @apply w-full mb-[10px] px-5 py-4 bg-white rounded-[10px] h-[50px] text-text-dark;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+}
+
+.form__input-select {
+  @apply py-[10px];
+}
+
+.form__input::placeholder {
+  color: #0000004d;
+}
+
+.form__input:focus-visible {
+  @apply outline-none;
+}
+
+.login__forgot {
+  @apply font-medium text-xs;
+}
+
+.login__subscribe {
+  @apply text-center font-medium text-sm;
+}
+
+.login__subscribe a {
+  @apply text-secondary;
+}

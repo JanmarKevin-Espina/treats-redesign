@@ -1,0 +1,39 @@
+.inside-box {
+  @apply py-12;
+}
+
+.inside-box__card {
+  @apply tablet:flex tablet:justify-between tablet:items-center tablet:mt-[42px];
+}
+
+.inside-box__header {
+  @apply w-[200px] sp:w-full mx-auto;
+}
+
+.inside-box__video-wrapper {
+  @apply tablet:max-w-[600px] tablet:w-full tablet:pr-10 my-[23px] tablet:my-0;
+}
+
+.inside-box__video {
+  @apply w-full h-[328px] rounded-[20px];
+}
+
+.inside-box__list {
+  @apply flex items-center pb-[9px];
+}
+
+.inside-box__list:nth-of-type(3) {
+  @apply pb-[21px]
+}
+
+.inside-number {
+  @apply font-header font-medium mr-[30px] tablet:mr-[26px] text-4xl text-light-blue;
+}
+
+.inside-text {
+  @apply font-header font-medium tablet:max-w-[513px] tablet:text-lg;
+}
+
+.inside-box__bottom p {
+  @apply text-xs sp:text-sm text-center mb-3 tablet:text-left tablet:text-lg;
+}

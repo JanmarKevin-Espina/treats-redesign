@@ -1,0 +1,11 @@
+.button {
+  @apply flex items-center justify-center bg-primary rounded-[10px] px-2 pt-[11px] pb-[12px] min-w-[135px] h-[50px] font-header text-sm text-text-light font-medium hover:bg-[#02c9d0];
+}
+
+.button.button--40 {
+  @apply h-10;
+}
+
+.button.button--secondary {
+  @apply bg-secondary hover:bg-[#fd7a4a];
+}
