@@ -254,11 +254,11 @@ footer {
 }
 
 .icon-user {
-  @apply bg-[url("../images/icon-user-2.png")] w-[22px] h-[22px] inline-block top-1 relative mr-[10px];
+  @apply bg-[url("../images/icon-user-2.png")] w-[22px] h-[22px] inline-block top-1 relative mr-[10px] bg-contain bg-no-repeat;
 }
 
 .icon-cart {
-  @apply bg-[url("../images/icon-cart-2.png")] w-[23px] h-[23px] inline-block relative mr-[10px] top-[5px];
+  @apply bg-[url("../images/icon-cart-2.png")] w-[23px] h-[23px] inline-block relative mr-[10px] top-[5px] bg-contain bg-no-repeat;
 }
 
 /* Header Desktop */

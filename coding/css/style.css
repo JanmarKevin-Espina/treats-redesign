@@ -1134,6 +1134,8 @@ footer {
   height: 22px;
   width: 22px;
   background-image: url("../images/icon-user-2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .icon-cart {
@@ -1144,6 +1146,8 @@ footer {
   height: 23px;
   width: 23px;
   background-image: url("../images/icon-cart-2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /* Header Desktop */
