@@ -493,7 +493,7 @@ footer {
 }
 
 .banner__hero {
-  @apply hidden h-full object-cover tablet:block;
+  @apply hidden h-full object-cover tablet:block tablet:mx-auto;
 }
 
 .banner__mobile {
