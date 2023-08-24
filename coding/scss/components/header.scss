@@ -41,7 +41,7 @@
 }
 
 .header__mobile-nav-item {
-  @apply h-10 pb-4 mb-4 border-b border-solid border-border-line relative;
+  @apply h-10 pb-4 mb-4 border-b border-solid border-border-line relative flex items-baseline;
 }
 
 .header__mobile-nav-item:last-of-type {
@@ -49,7 +49,7 @@
 }
 
 .header__mobile-nav-item a {
-  @apply font-header font-medium text-xl;
+  @apply font-header font-medium text-xl w-full inline-block;
 }
 
 .header__mobile-nav-item a:after {
