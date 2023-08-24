@@ -1,0 +1,72 @@
+.cart {
+  @apply pt-[30px] pb-[50px] tablet:pt-[50px] tablet:pb-[168px];
+
+  &__wrapper {
+    @apply tablet:flex;
+  }
+
+  &__list {
+    @apply tablet:h-full tablet:mr-[30px] tablet:w-full;
+
+    .cart__card-wrapper:first-of-type {
+      @apply justify-center mb-[30px];
+    }
+  }
+
+  &__card-wrapper {
+    @apply flex justify-between;
+  }
+
+  &__card {
+    @apply bg-product-bg mb-5 rounded-[10px] p-[14px] sp:p-5 big:w-full big:mb-0 big:mr-[30px] big:h-full big:justify-between big:flex big:mt-2;
+
+    &:first-of-type {
+      @apply big:mt-0;
+    }
+
+    &--order {
+      @apply mb-0 font-medium tablet:mr-0 tablet:mt-0 tablet:w-[47.1%] tablet:block;
+  
+      & h3 {
+        @apply mb-[25px];
+      }
+  
+      & .cart__card-wrapper:nth-of-type(3) {
+        @apply pt-[6px] pb-[15px];
+      }
+  
+      & .cart__card-wrapper:last-of-type {
+        @apply pt-4 border-t border-dashed mb-[34px];
+        border-color: rgba(0, 0, 0, 0.10);
+      }
+    }
+  }
+
+  &__img-wrapper {
+    @apply mr-[15px] tablet:mr-5;
+  }
+
+  &__img-wrapper img {
+    @apply max-w-[100px] sp:max-w-full tablet:max-w-[131px];
+  }
+
+  &__text h3 {
+    @apply text-light-blue font-header font-semibold text-[26px] tablet:text-3xl;
+  }
+
+  &__text-h4 {
+    @apply text-xs font-medium my-0 sp:my-[4px] tablet:text-base tablet:mb-[11px] tablet:leading-none;
+  }
+
+  &__text-second {
+    @apply font-header font-semibold text-lg text-primary tablet:text-2xl;
+  }
+
+  &__price {
+    @apply text-[40px] font-header font-medium leading-none tablet:pl-4 tablet:pr-[70px];
+  }
+
+  &__icon-trash {
+    @apply bg-[url('../images/remove.png')] w-[30px] h-[30px] block cursor-pointer;
+  }
+}

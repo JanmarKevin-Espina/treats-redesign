@@ -1,0 +1,37 @@
+extends layout.pug
+
+block content
+  section.section
+    .breadcrumbs
+      h2 My Cart
+      ul.breadcrumbs__list
+        li.breadcrumbs__item Home
+        li.breadcrumbs__item Cart
+    .cart
+      .main-wrapper
+        .cart__wrapper
+          .cart__list
+            .cart__card
+              .cart__card-wrapper
+                .cart__img-wrapper
+                  img(src="../images/item-product.png", alt="Item Product")
+                .cart__text
+                  h3 Premium Box
+                  p.cart__text-h4 12 Month Pre-Paid Subscription
+                  p.cart__text-second 12 Month Prepay
+              .cart__card-wrapper(class="mt-[29px] tablet:mt-0 tablet:items-center")
+                p.cart__price $275.00
+                .cart__icon-trash
+          .cart__card.cart__card--order
+            .cart__text
+              h3 Order Total
+            .cart__card-wrapper
+              p.cart__text-order Subtotal
+              p.cart__text-number $275.00
+            .cart__card-wrapper
+              p.cart__text-order Est. Tax
+              p.cart__text-number $23.72
+            .cart__card-wrapper
+              p.cart__text-order Total
+              p.cart__text-number $298.72
+            button.button.button--secondary.w-full Checkout

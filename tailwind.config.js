@@ -19,7 +19,8 @@ module.exports = {
         'light-blue': '#2d4357',
         'text-light': '#fff',
         'text-dark': '#000',
-        'border-line': '#0000001a'
+        'border-line': '#0000001a',
+        'product-bg': '#f4f4f4'
       },
       fontFamily: {
         'header': 'Fredoka, sans-serif',

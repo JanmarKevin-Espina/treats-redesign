@@ -71,68 +71,49 @@
         </div>
       </header>
       <section class="section">
-        <div class="office-banner">
-          <div class="office__banner-img-wrapper"><img class="office__banner-img" src="../images/office-desktop.png" alt="Office Chair"><img class="office__banner-img--mobile" src="../images/office-mobile.png" alt="Office Chair"></div>
-          <div class="office__banner-wrapper">
-            <div class="main-wrapper">
-              <div class="office__banner-text">
-                <h2>Treats For Office</h2>
-                <p>Share the joy of flavors from around the world with your colleagues with international Treats delivered! Whether that's regular office treats or gifts for special events or the holidays, we've got you covered!</p>
-              </div>
-            </div>
-          </div>
+        <div class="breadcrumbs">
+          <h2>My Cart</h2>
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">Home</li>
+            <li class="breadcrumbs__item">Cart</li>
+          </ul>
         </div>
-        <div class="office">
+        <div class="cart">
           <div class="main-wrapper">
-            <div class="office-wrapper">
-              <h3 class="office__header">Select Your Plan</h3>
-              <div class="office__dev">
-                <div class="office__card-wrapper">
-                  <div class="office__card">
-                    <div class="office__card-header"> 
-                      <div class="office__img-wrapper"><img src="../images/icon-calendar.png" alt="Calendar"></div>
-                      <h3>Monthly Office <br class="office__separator">Subscription</h3>
+            <div class="cart__wrapper">
+              <div class="cart__list">
+                <div class="cart__card">
+                  <div class="cart__card-wrapper">
+                    <div class="cart__img-wrapper"><img src="../images/item-product.png" alt="Item Product"></div>
+                    <div class="cart__text">
+                      <h3>Premium Box</h3>
+                      <p class="cart__text-h4">12 Month Pre-Paid Subscription</p>
+                      <p class="cart__text-second">12 Month Prepay</p>
                     </div>
-                    <ul class="office__list">
-                      <li class="office__item"><i class="icon__circle-check"></i>Recurring Treats deliveries to the office monthly</li>
-                      <li class="office__item"><i class="icon__circle-check"></i>Explore a different country every month</li>
-                      <li class="office__item"><i class="icon__circle-check"></i>Cancel anytime</li>
-                    </ul>
                   </div>
-                  <div class="office__card">
-                    <div class="office__card-header"> 
-                      <div class="office__img-wrapper"><img src="../images/icon-calendar.png" alt="Calendar"></div>
-                      <h3>Office Gift <br class="office__separator">(Non-Renewing)</h3>
-                    </div>
-                    <ul class="office__list">
-                      <li class="office__item"><i class="icon__circle-check"></i>Gift Orders or Subscriptions that do not renew</li>
-                      <li class="office__item"><i class="icon__circle-check"></i>Explore a different country for every box</li>
-                      <li class="office__item"><i class="icon__circle-check"></i>Personalization Available</li>
-                    </ul>
+                  <div class="cart__card-wrapper mt-[29px] tablet:mt-0 tablet:items-center">
+                    <p class="cart__price">$275.00</p>
+                    <div class="cart__icon-trash"></div>
                   </div>
                 </div>
-                <div class="office__form">
-                  <div class="office__card office__card--form">
-                    <div class="office__card-header">
-                      <h3>Fill Out The Form</h3>
-                    </div>
-                    <form class="form" action="#">
-                      <div class="input__wrapper">
-                        <select class="form__input form__input-select" placeholder="Number of Boxes Requested">
-                          <option value="">Office Subscription to Treats (Reccuring Delivery)</option>
-                          <option value="">One-Time Office Gifts (Non-Recurring Delivery)</option>
-                        </select>
-                      </div>
-                      <div class="input__wrapper">
-                        <input class="form__input" type="number" placeholder="Number of Boxes Requested">
-                      </div>
-                      <div class="input__wrapper">
-                        <input class="form__input" type="email" placeholder="Email">
-                      </div>
-                      <button class="button button--secondary w-full mt-[30px]">Send</button>
-                    </form>
-                  </div>
+              </div>
+              <div class="cart__card cart__card--order">
+                <div class="cart__text">
+                  <h3>Order Total</h3>
                 </div>
+                <div class="cart__card-wrapper">
+                  <p class="cart__text-order">Subtotal</p>
+                  <p class="cart__text-number">$275.00</p>
+                </div>
+                <div class="cart__card-wrapper">
+                  <p class="cart__text-order">Est. Tax</p>
+                  <p class="cart__text-number">$23.72</p>
+                </div>
+                <div class="cart__card-wrapper">
+                  <p class="cart__text-order">Total</p>
+                  <p class="cart__text-number">$298.72</p>
+                </div>
+                <button class="button button--secondary w-full">Checkout</button>
               </div>
             </div>
           </div>

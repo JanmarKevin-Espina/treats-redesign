@@ -18,7 +18,9 @@
 .order,
 .join,
 .office,
-.office__banner-wrapper {
+.office__banner-wrapper,
+.breadcrumbs,
+.cart {
   @apply px-3 sp:px-6;
 }
 
