@@ -71,7 +71,8 @@ footer {
 .office,
 .office__banner-wrapper,
 .breadcrumbs,
-.cart {
+.cart,
+.product {
   @apply px-3 sp:px-6;
 }
 
@@ -1089,6 +1090,34 @@ footer {
 }
 .cart__icon-trash {
   @apply bg-[url("../images/remove.png")] w-[30px] h-[30px] block cursor-pointer;
+}
+
+.product {
+  @apply pt-[30px] pb-[50px];
+}
+.product__list {
+  @apply grid small:grid-cols-2 medium:grid-cols-3 big:grid-cols-4 gap-5 big:gap-[30px];
+}
+.product__highlight {
+  @apply font-text text-sm text-primary mb-9;
+}
+.product__item {
+  @apply bg-product-bg rounded-[15px] p-[30px] hover:bg-secondary;
+}
+.product__item:hover .product__highlight, .product__item:hover .product__header h3, .product__item:hover .product__header p {
+  @apply text-text-light;
+}
+.product__card img {
+  @apply mx-auto;
+}
+.product__header {
+  @apply text-center mt-[39px];
+}
+.product__header h3 {
+  @apply font-header font-semibold text-[26px] mb-[4px];
+}
+.product__header p {
+  @apply font-text text-xl text-text-dark-60;
 }
 
 /*# sourceMappingURL=input.css.map */
