@@ -71,67 +71,38 @@
         </div>
       </header>
       <section class="section">
-        <div class="office-banner">
-          <div class="office__banner-img-wrapper"><img class="office__banner-img" src="../images/office-desktop.png" alt="Office Chair"><img class="office__banner-img--mobile" src="../images/office-mobile.png" alt="Office Chair"></div>
-          <div class="office__banner-wrapper">
-            <div class="main-wrapper">
-              <div class="office__banner-text">
-                <h2>Treats For Office</h2>
-                <p>Share the joy of flavors from around the world with your colleagues with international Treats delivered! Whether that's regular office treats or gifts for special events or the holidays, we've got you covered!</p>
-              </div>
-            </div>
-          </div>
+        <div class="breadcrumbs">
+          <h2 class="uppercase">Faq</h2>
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">Home</li>
+            <li class="breadcrumbs__item uppercase">Faq</li>
+          </ul>
         </div>
-        <div class="office">
-          <div class="main-wrapper">
-            <div class="office-wrapper">
-              <h3 class="office__header">Select Your Plan</h3>
-              <div class="office__dev">
-                <div class="office__card-wrapper">
-                  <div class="office__card">
-                    <div class="office__card-header"> 
-                      <div class="office__img-wrapper"><img src="../images/icon-calendar.png" alt="Calendar"></div>
-                      <h3>Monthly Office <br class="office__separator">Subscription</h3>
-                    </div>
-                    <ul class="office__list">
-                      <li class="office__item"><i class="icon__circle-check"></i>Recurring Treats deliveries to the office monthly</li>
-                      <li class="office__item"><i class="icon__circle-check"></i>Explore a different country every month</li>
-                      <li class="office__item"><i class="icon__circle-check"></i>Cancel anytime</li>
-                    </ul>
-                  </div>
-                  <div class="office__card">
-                    <div class="office__card-header"> 
-                      <div class="office__img-wrapper"><img src="../images/icon-calendar.png" alt="Calendar"></div>
-                      <h3>Office Gift <br class="office__separator">(Non-Renewing)</h3>
-                    </div>
-                    <ul class="office__list">
-                      <li class="office__item"><i class="icon__circle-check"></i>Gift Orders or Subscriptions that do not renew</li>
-                      <li class="office__item"><i class="icon__circle-check"></i>Explore a different country for every box</li>
-                      <li class="office__item"><i class="icon__circle-check"></i>Personalization Available</li>
-                    </ul>
-                  </div>
+        <div class="faq">
+          <div class="main-wrapper main-wrapper--faq">
+            <div class="faq__header">
+              <h2>Frequently Asked <br class="faq__separator">Questions</h2>
+              <p>What can we help you with?</p>
+            </div>
+            <div class="faq__search-wrapper"><i class="fas fa-search faq__icon-search"></i>
+              <input class="faq__input" id="js-search" type="search" placeholder="Type your question..">
+              <button class="faq__cta" type="button">Search</button>
+            </div>
+            <div class="faq__wrapper">
+              <div id="faq__box--treats">
+                <div class="faq__header">
+                  <h3>Treats Box</h3>
                 </div>
-                <div class="office__form">
-                  <div class="office__card office__card--form">
-                    <div class="office__card-header">
-                      <h3>Fill Out The Form</h3>
-                    </div>
-                    <form class="form" action="#">
-                      <div class="input__wrapper">
-                        <select class="form__input form__input-select" placeholder="Number of Boxes Requested">
-                          <option value="">Office Subscription to Treats (Reccuring Delivery)</option>
-                          <option value="">One-Time Office Gifts (Non-Recurring Delivery)</option>
-                        </select>
-                      </div>
-                      <div class="input__wrapper">
-                        <input class="form__input" type="number" placeholder="Number of Boxes Requested">
-                      </div>
-                      <div class="input__wrapper">
-                        <input class="form__input" type="email" placeholder="Email">
-                      </div>
-                      <button class="button button--secondary w-full mt-[30px]">Send</button>
-                    </form>
-                  </div>
+                <ul id="js-faq__list"></ul>
+              </div>
+              <div id="faq__box--order">
+                <div class="faq__header">
+                  <h3>Orders</h3>
+                </div>
+              </div>
+              <div id="faq__box--shipping">
+                <div class="faq__header">
+                  <h3>Shipping</h3>
                 </div>
               </div>
             </div>

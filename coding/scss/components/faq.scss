@@ -1,0 +1,85 @@
+.faq {
+  @apply pt-[43px] pb-[50px];
+
+  &__header {
+    & h2 {
+      @apply font-header font-semibold text-3xl text-crimson mb-[6px] text-center tablet:text-4xl tablet:mb-[10px] tablet:font-medium;
+    }
+
+    & p {
+      @apply font-text text-base text-text-dark text-center;
+    }
+
+    & h3 {
+      @apply font-header font-semibold text-[26px] text-light-blue mb-[11px] tablet:mb-5;
+    }
+  }
+
+  &__separator {
+    @apply tablet:hidden;
+  }
+
+  &__search-wrapper {
+    @apply w-full relative mt-[26px] mb-[24px] tablet:mt-[45px] tablet:mb-[42px] tablet:flex tablet:items-center;
+  }
+
+  &__input {
+    @apply w-full border border-[#0000001a] py-[14px] pl-[35px] sp:pl-[48px] pr-[109px] font-text text-sm font-medium text-text-dark-60 rounded-[10px] tablet:mr-5 tablet:border-text-dark tablet:pr-[35px];
+
+    &:focus-visible {
+      @apply outline-none;
+    }
+  }
+
+  &__icon-search,
+  &__cta {
+    @apply absolute z-10 top-2/4 -translate-y-1/2;
+  }
+
+  &__icon-search {
+    @apply left-[11px] sp:left-5;
+  }
+
+  &__cta {
+    @apply bg-secondary rounded-lg text-text-light font-header font-medium text-base right-[10px] w-[90px] h-[30px] tablet:static tablet:w-[170px] tablet:h-[50px] tablet:transform-none;
+  }
+
+  &__card {
+    @apply border-b border-border-line pb-[13px] mb-[9px];
+
+    &:last-of-type {
+      @apply mb-0;
+    }
+  }
+
+  &__accordion {
+    @apply cursor-pointer text-text-dark text-lg font-header font-medium outline-none w-full border-none text-left relative;
+    transition: 0.4s;
+  }
+
+  &__accordion:after {
+    @apply bg-[url('../images/chevron-down.png')] w-[22px] h-[22px] bg-no-repeat bg-center absolute right-0 top-2/4 -translate-y-2/4;
+    content: '';
+  }
+
+  .active {
+    @apply pb-[9px];
+  }
+
+  .active:after {
+    @apply bg-[url('../images/chevron-up.png')] w-[22px] h-[22px] bg-no-repeat bg-center absolute right-0 top-2/4 -translate-y-2/4;
+    content: '';
+  }
+  
+  &__panel {
+    @apply font-text font-medium text-sm text-text-dark-60;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  &__box {
+    @apply mb-6 tablet:mb-[89px];
+  }
+}

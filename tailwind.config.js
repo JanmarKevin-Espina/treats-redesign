@@ -19,6 +19,7 @@ module.exports = {
         'light-blue': '#2d4357',
         'text-light': '#fff',
         'text-dark': '#000',
+        'text-dark-60': '#000000a8',
         'border-line': '#0000001a',
         'product-bg': '#f4f4f4'
       },

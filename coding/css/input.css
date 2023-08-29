@@ -33,6 +33,10 @@ footer {
   @apply tablet:max-w-[1170px] tablet:mx-auto;
 }
 
+.main-wrapper--faq {
+  @apply tablet:max-w-[770px];
+}
+
 .main-wrapper--order {
   @apply tablet:max-w-[970px];
 }
@@ -71,7 +75,8 @@ footer {
 .office,
 .office__banner-wrapper,
 .breadcrumbs,
-.cart {
+.cart,
+.faq {
   @apply px-3 sp:px-6;
 }
 
@@ -1089,6 +1094,71 @@ footer {
 }
 .cart__icon-trash {
   @apply bg-[url("../images/remove.png")] w-[30px] h-[30px] block cursor-pointer;
+}
+
+.faq {
+  @apply pt-[43px] pb-[50px];
+}
+.faq__header h2 {
+  @apply font-header font-semibold text-3xl text-crimson mb-[6px] text-center tablet:text-4xl tablet:mb-[10px] tablet:font-medium;
+}
+.faq__header p {
+  @apply font-text text-base text-text-dark text-center;
+}
+.faq__header h3 {
+  @apply font-header font-semibold text-[26px] text-light-blue mb-[11px] tablet:mb-5;
+}
+.faq__separator {
+  @apply tablet:hidden;
+}
+.faq__search-wrapper {
+  @apply w-full relative mt-[26px] mb-[24px] tablet:mt-[45px] tablet:mb-[42px] tablet:flex tablet:items-center;
+}
+.faq__input {
+  @apply w-full border border-[#0000001a] py-[14px] pl-[35px] sp:pl-[48px] pr-[109px] font-text text-sm font-medium text-text-dark-60 rounded-[10px] tablet:mr-5 tablet:border-text-dark tablet:pr-[35px];
+}
+.faq__input:focus-visible {
+  @apply outline-none;
+}
+.faq__icon-search, .faq__cta {
+  @apply absolute z-10 top-2/4 -translate-y-1/2;
+}
+.faq__icon-search {
+  @apply left-[11px] sp:left-5;
+}
+.faq__cta {
+  @apply bg-secondary rounded-lg text-text-light font-header font-medium text-base right-[10px] w-[90px] h-[30px] tablet:static tablet:w-[170px] tablet:h-[50px] tablet:transform-none;
+}
+.faq__card {
+  @apply border-b border-border-line pb-[13px] mb-[9px];
+}
+.faq__card:last-of-type {
+  @apply mb-0;
+}
+.faq__accordion {
+  @apply cursor-pointer text-text-dark text-lg font-header font-medium outline-none w-full border-none text-left relative;
+  transition: 0.4s;
+}
+.faq__accordion:after {
+  @apply bg-[url("../images/chevron-down.png")] w-[22px] h-[22px] bg-no-repeat bg-center absolute right-0 top-2/4 -translate-y-2/4;
+  content: "";
+}
+.faq .active {
+  @apply pb-[9px];
+}
+.faq .active:after {
+  @apply bg-[url("../images/chevron-up.png")] w-[22px] h-[22px] bg-no-repeat bg-center absolute right-0 top-2/4 -translate-y-2/4;
+  content: "";
+}
+.faq__panel {
+  @apply font-text font-medium text-sm text-text-dark-60;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.faq__box {
+  @apply mb-6 tablet:mb-[89px];
 }
 
 /*# sourceMappingURL=input.css.map */
