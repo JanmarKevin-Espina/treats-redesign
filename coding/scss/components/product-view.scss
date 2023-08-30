@@ -1,0 +1,87 @@
+.product-view {
+  &__wrapper {
+    @apply pt-[30px] pb-[39px] tablet:grid tablet:grid-cols-2 tablet:gap-x-[31px] tablet:pt-[60px] tablet:pb-[100px];
+  }
+
+  &__display {
+    @apply bg-product-bg rounded-[15px] flex items-center justify-center tablet:h-[135px] hover:bg-secondary cursor-pointer;
+
+    & img {
+      @apply scale-[0.6] tablet:scale-50;
+    }
+
+    &--full {
+      @apply h-[328px] tablet:h-[570px] hover:bg-product-bg cursor-default;
+
+      & img {
+        @apply tablet:transform-none;
+      }
+    }
+  }
+
+  &__list {
+    @apply hidden tablet:grid tablet:grid-cols-4 tablet:gap-x-[10px] mt-[10px];
+  }
+
+  &__header {
+    @apply mt-5 tablet:mt-[41px] tablet:mb-[39px];
+
+    & h3 {
+      @apply font-header font-medium text-3xl text-text-dark mb-2 tablet:mb-3 tablet:text-4xl;
+    }
+
+    & p {
+      @apply font-text font-medium text-sm text-text-dark tablet:text-2xl;
+    }
+  }
+
+  &__caution-card {
+    @apply flex mt-[26px];
+
+    &:nth-of-type(2) {
+      @apply mt-4;
+    }
+  }
+
+  &__card-details {
+    & h4 {
+      @apply font-header font-medium text-xl text-text-dark mb-[3px];
+    }
+
+    & p {
+      @apply text-text-dark-60 font-text font-normal text-base;
+    }
+  }
+
+  &__icon {
+    @apply w-[42px] h-[42px] mr-5;
+  }
+
+  &__cta {
+    @apply grid grid-cols-2 gap-x-5 tablet:gap-x-[30px];
+
+    & button {
+      @apply tablet:w-full;
+    }
+  }
+
+  &__description {
+    @apply mt-4 mb-5 tablet:mt-[34px] tablet:mb-[30px];
+
+    & h4 {
+      @apply font-header font-medium text-xl text-text-dark mb-[9px];
+    }
+
+    & p {
+      @apply text-text-dark-60 font-normal font-text text-base;
+    }
+  }
+
+  &__mobile {
+    @apply tablet:hidden;
+  }
+
+  &__desktop {
+    @apply hidden tablet:grid;
+  }
+}
