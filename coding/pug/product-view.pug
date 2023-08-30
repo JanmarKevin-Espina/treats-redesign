@@ -1,0 +1,51 @@
+extends layout.pug
+
+block content
+  section.section
+    .breadcrumbs
+      h2 Dried Mango
+      ul.breadcrumbs__list
+        li.breadcrumbs__item.text-xs Home
+        li.breadcrumbs__item.text-xs Explore Treats
+        li.breadcrumbs__item.text-xs Treats From Asia
+    .product-view
+      .main-wrapper
+        .product-view__wrapper
+          .product-view__card
+            .product-view__display.product-view__display--full
+              img(src="../images/products/driedMango2.png", alt="Dried Mango from philippines")
+            ul.product-view__list
+              li.product-view__display
+                img(src="../images/products/driedMango2.png", alt="Dried Mango from philippines")
+              li.product-view__display
+                img(src="../images/products/driedMango2.png", alt="Dried Mango from philippines")
+              li.product-view__display
+                img(src="../images/products/driedMango2.png", alt="Dried Mango from philippines")
+              li.product-view__display
+                img(src="../images/products/driedMango2.png", alt="Dried Mango from philippines")
+          .product-view__card
+            .product-view__cta.mt-5.product-view__mobile
+              button.button.button--secondary Prev
+              button.button.button--secondary Next
+            .product-view__header
+              h3 Dried Mango 
+                br.product-view__separator
+                | By Philippine Brand
+              p Country of Origin: Phlippines
+            .product-view__caution
+              .product-view__caution-card
+                img.product-view__icon(src="../images/ingredients-icon.png")
+                .product-view__card-details
+                  h4 Ingredients
+                  p Mangoes, Sugar, Sulfur Dioxide (as a preservative)
+              .product-view__caution-card
+                img.product-view__icon(src="../images/allergy-icon.png")
+                .product-view__card-details
+                  h4 Allergy Info
+                  p Contains Mangos
+            .product-view__description
+              h4 Item Description
+              p As anyone who has visited the Philippines can attest, dried mangos are a staple snack in the country, and are produced from the famous mangos of the Philippines. These dried mangos are sweet, chewy, and retain the moisture and flavor of the fruit when fresh. These dried mango also contain high fibre content, which is what gives the mango its very chewy texture. The combination of its taste and the texture makes this treat addictive to munch on. Take a pack with you and enjoy tropical mangos anywhere you go!
+            .product-view__cta.product-view__desktop
+              button.button.button--secondary Prev
+              button.button.button--secondary Next
