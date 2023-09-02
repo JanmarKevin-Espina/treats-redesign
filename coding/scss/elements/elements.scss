@@ -28,8 +28,12 @@ footer {
 
 .main-wrapper {
   @apply tablet:max-w-[1170px] tablet:mx-auto;
-}
 
-.main-wrapper--order {
-  @apply tablet:max-w-[970px];
+  &--order {
+    @apply tablet:max-w-[970px];
+  }
+
+  &--gift {
+    @apply tablet:max-w-[770px];
+  }
 }
