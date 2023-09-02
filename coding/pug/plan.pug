@@ -1,0 +1,60 @@
+extends layout.pug
+
+block content
+  section.section
+    .breadcrumbs.breadcrumbs--w-img
+      img(src="../images/giftboyy.png", alt="Delivery Boy")
+      h2 Select Your Plan
+    .gift
+      .main-wrapper.main-wrapper--gift
+        .gift__wrapper
+          h2 Select A Size
+          .gift__item-list
+            .gift__item
+              .gift__item-wrapper
+                .gift__img
+                  img(src="../images/standardbox.png", alt="Treatbox Standard")
+                .gift__details
+                  .gift__header
+                    h3 Standard Box
+                    p As low as $14.95 per box!
+                  .gift__list
+                    .gift__row
+                      img(src="../images/gift-icon1.png", alt="Cookies Icon")
+                      p 5+ international snacks delivered each month
+                    .gift__row
+                      img(src="../images/gift-icon2.png", alt="Fruit Icon")
+                      p Try a new country every month
+                    .gift__row
+                      img(src="../images/gift-icon3.png", alt="Box Icon")
+                      p Receive your first box within a week of your order
+                    .gift__row
+                      img(src="../images/gift-icon4.png", alt="Earth Plane Travel Icon")
+                      p Shipping is free for addresses in the United States. Shipping fees will apply for addresses outside of the United States.
+              button.button.button--secondary.w-full Subscribe Box
+            .gift__item
+              p.gift__best-value Best Value!
+              .gift__item-wrapper
+                .gift__img
+                  img(src="../images/premiumbox.png", alt="Treatbox Premium")
+                .gift__details
+                  .gift__header
+                    h3 Standard Box
+                    p As low as $25.95 per box!
+                  .gift__list
+                    .gift__row
+                      img(src="../images/gift-icon1.png", alt="Cookies Icon")
+                      p 10+ international snacks delivered each month
+                    .gift__row
+                      img(src="../images/gift-icon2.png", alt="Fruit Icon")
+                      p Try a new country every month
+                    .gift__row
+                      img(src="../images/gift-icon3.png", alt="Box Icon")
+                      p Receive your first box within a week of your order
+                    .gift__row
+                      img(src="../images/gift-icon4.png", alt="Earth Plane Travel Icon")
+                      p Shipping is free for addresses in the United States. Shipping fees will apply for addresses outside of the United States.
+              button.button.button--secondary.w-full Subscribe Box
+    include components/testimony.pug
+    include components/social.pug
+    include components/join_treats.pug

@@ -44,6 +44,10 @@
 
 .testimony-social {
   @apply pt-5 pb-[43px] tablet:pt-[30px] tablet:pb-[72px];
+
+  &--component {
+    @apply pb-0 tablet:pb-0;
+  }
 }
 
 .testimony-social__list {
