@@ -40,35 +40,7 @@ var reviews = [
     "name": "Rachel",
     "date": "02/4/2022",
     "title": "Great Time as Always"
-    },
-   /*{
-      "review": "Excellent service.",
-      "stars": 4,
-    "name": "Sally Williams",
-     "date": "01/25/2022",
-    "title": ""
-    },
-  {
-      "review": "I want more!",
-      "stars": 5,
-    "name":  "Jordan Edison",
-    "date": "12/11/2021",
-    "title": ""
-    },
-   {
-      "review": "Everything came fresh!",
-      "stars": 5,
-    "name": "George Moody",
-    "date": "01/19/2022",
-    "title": ""
-    },
-  {
-      "review": "I will definitely be buying again!",
-      "stars": 5,
-    "name": "Joseph Dukes",
-    "date": "01/15/2022",
-    "title": ""
-    }*/
+    }
 ];
 var all_reviews = [];
 

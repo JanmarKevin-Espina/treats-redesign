@@ -76,50 +76,42 @@
         </div>
       </header>
       <section class="section">
-        <div class="breadcrumbs">
-          <h2>My Cart</h2>
-          <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__item">Home</li>
-            <li class="breadcrumbs__item">Cart</li>
-          </ul>
-        </div>
-        <div class="cart">
+        <div class="box-card">
           <div class="main-wrapper">
-            <div class="cart__wrapper">
-              <div class="cart__list">
-                <div class="cart__card">
-                  <div class="cart__card-wrapper">
-                    <div class="cart__img-wrapper"><img src="../images/item-product.png" alt="Item Product"></div>
-                    <div class="cart__text">
-                      <h3>Premium Box</h3>
-                      <p class="cart__text-h4">12 Month Pre-Paid Subscription</p>
-                      <p class="cart__text-second">12 Month Prepay</p>
-                    </div>
-                  </div>
-                  <div class="cart__card-wrapper mt-[29px] tablet:mt-0 tablet:items-center">
-                    <p class="cart__price">$275.00</p>
-                    <div class="cart__icon-trash"></div>
-                  </div>
-                </div>
+            <div class="box-card__item">
+              <div class="box-card__header">
+                <h2>Header Here</h2>
+                <p>We're eager to hear from you! Contact us anytime. Your feedback matters.</p>
               </div>
-              <div class="cart__card cart__card--order">
-                <div class="cart__text">
-                  <h3>Order Total</h3>
+              <form onsubmit="sendEmail(); reset(); return false;" method="POST">
+                <div class="box-card__wrapper">
+                  <div class="box-card__inside">
+                    <label for="name">First Name</label>
+                    <input id="firstName" type="text" name="name" placeholder="First Name" required>
+                  </div>
+                  <div class="box-card__inside">
+                    <label for="surname">Last Name </label>
+                    <input id="lastName" type="text" name="surname" placeholder="Last Name" required>
+                  </div>
                 </div>
-                <div class="cart__card-wrapper">
-                  <p class="cart__text-order">Subtotal</p>
-                  <p class="cart__text-number">$275.00</p>
+                <div class="box-card__wrapper">
+                  <div class="box-card__inside">
+                    <label for="email">Email Address </label>
+                    <input id="email" type="email" name="email" placeholder="Email Address">
+                  </div>
                 </div>
-                <div class="cart__card-wrapper">
-                  <p class="cart__text-order">Est. Tax</p>
-                  <p class="cart__text-number">$23.72</p>
+                <div class="box-card__wrapper">
+                  <div class="box-card__inside">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Message for us" rows="4" required data-error="Please, leave us a message."></textarea>
+                  </div>
                 </div>
-                <div class="cart__card-wrapper">
-                  <p class="cart__text-order">Total</p>
-                  <p class="cart__text-number">$298.72</p>
+                <div class="box-card__wrapper">
+                  <div class="box-card__inside">
+                    <button class="button button--secondary w-full mt-[30px]" type="submit">Send</button>
+                  </div>
                 </div>
-                <button class="button button--secondary w-full">Checkout</button>
-              </div>
+              </form>
             </div>
           </div>
         </div>

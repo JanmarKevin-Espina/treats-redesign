@@ -1,4 +1,46 @@
 const navItems = document.querySelectorAll('.js-nav-toggle');
+const navUser = document.querySelectorAll('.js-user-toggle');
+const navList = document.querySelectorAll('.header__nav-list');
+
+if (navUser) {
+  /**
+   * Closes all sub lists
+   */
+  const removeOpenClassUser = () => {
+    navUser.forEach(items => {
+      items.classList.remove('block');
+    });
+  }
+
+  navUser.forEach(items => {
+    items.addEventListener('click', () => {
+      /**
+       * Close sub list if already open
+       */
+      if (navUser.classList.contains('block')) {
+        navUser.classList.remove('block');
+        return;
+      }
+
+      /**
+       * Close all sub lists
+       * Open sub list of clicked toggle items
+       */
+      removeOpenClassUser();
+      items.classList.add('block');
+      console.log(items)
+    });
+  });
+
+  /**
+   * Close sub-lists if clicked outside the toggle items
+   */
+  document.addEventListener('click', (evt) => {
+    if (!evt.target.classList.contains('js-user-toggle')) {
+      removeOpenClassUser();
+    }
+  });
+}
 
 if (navItems) {
   /**

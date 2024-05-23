@@ -77,48 +77,40 @@
       </header>
       <section class="section">
         <div class="breadcrumbs">
-          <h2>My Cart</h2>
+          <h2 class="uppercase">Faq</h2>
           <ul class="breadcrumbs__list">
             <li class="breadcrumbs__item">Home</li>
-            <li class="breadcrumbs__item">Cart</li>
+            <li class="breadcrumbs__item uppercase">Faq</li>
           </ul>
         </div>
-        <div class="cart">
-          <div class="main-wrapper">
-            <div class="cart__wrapper">
-              <div class="cart__list">
-                <div class="cart__card">
-                  <div class="cart__card-wrapper">
-                    <div class="cart__img-wrapper"><img src="../images/item-product.png" alt="Item Product"></div>
-                    <div class="cart__text">
-                      <h3>Premium Box</h3>
-                      <p class="cart__text-h4">12 Month Pre-Paid Subscription</p>
-                      <p class="cart__text-second">12 Month Prepay</p>
-                    </div>
-                  </div>
-                  <div class="cart__card-wrapper mt-[29px] tablet:mt-0 tablet:items-center">
-                    <p class="cart__price">$275.00</p>
-                    <div class="cart__icon-trash"></div>
-                  </div>
+        <div class="faq">
+          <div class="main-wrapper main-wrapper--faq">
+            <div class="faq__header">
+              <h2>Frequently Asked <br class="faq__separator">Questions</h2>
+              <p>What can we help you with?</p>
+            </div>
+            <div class="faq__search-wrapper"><i class="fas fa-search faq__icon-search"></i>
+              <input class="faq__input" id="js-search" type="search" placeholder="Type your question..">
+              <button class="faq__cta" type="button">Search</button>
+            </div>
+            <div class="faq__wrapper">
+              <div id="faq__box--treats">
+                <div class="faq__header" id="js-hide">
+                  <h3>Treats Box</h3>
                 </div>
+                <ul id="js-faq__list"></ul>
               </div>
-              <div class="cart__card cart__card--order">
-                <div class="cart__text">
-                  <h3>Order Total</h3>
+              <div id="faq__box--order">
+                <div class="faq__header" id="js-hide">
+                  <h3>Orders</h3>
                 </div>
-                <div class="cart__card-wrapper">
-                  <p class="cart__text-order">Subtotal</p>
-                  <p class="cart__text-number">$275.00</p>
+                <ul id="js-faq__orders"></ul>
+              </div>
+              <div id="faq__box--shipping">
+                <div class="faq__header" id="js-hide">
+                  <h3>Shipping</h3>
                 </div>
-                <div class="cart__card-wrapper">
-                  <p class="cart__text-order">Est. Tax</p>
-                  <p class="cart__text-number">$23.72</p>
-                </div>
-                <div class="cart__card-wrapper">
-                  <p class="cart__text-order">Total</p>
-                  <p class="cart__text-number">$298.72</p>
-                </div>
-                <button class="button button--secondary w-full">Checkout</button>
+                <ul id="js-faq__shipping"></ul>
               </div>
             </div>
           </div>

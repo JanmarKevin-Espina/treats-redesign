@@ -43,6 +43,14 @@
     & p {
       @apply font-text font-semibold text-base text-text-dark tablet:text-lg;
     }
+
+    &--pc {
+      @apply hidden text-center mb-2 tablet:block;
+    }
+
+    &--sp {
+      @apply tablet:hidden;
+    }
   }
 
   &__row {
@@ -58,6 +66,24 @@
 
     & p {
       @apply font-text font-medium text-[13px] text-text-dark leading-none;
+    }
+  }
+
+  &__item-list {
+    &--subscribe {
+      @apply tablet:grid tablet:grid-cols-2 tablet:gap-x-5;
+
+      & .gift__item {
+        @apply tablet:mb-0;
+      }
+
+      & .gift__img img {
+        @apply tablet:left-0;
+      }
+
+      & .gift__item-wrapper {
+        @apply tablet:block;
+      }
     }
   }
 }

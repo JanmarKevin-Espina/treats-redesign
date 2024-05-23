@@ -1,0 +1,33 @@
+extends layout.pug
+
+block content
+  section.section
+    .breadcrumbs
+      h2.uppercase Faq
+      ul.breadcrumbs__list
+        li.breadcrumbs__item Home
+        li.breadcrumbs__item.uppercase Faq
+    .faq
+      .main-wrapper.main-wrapper--faq
+        .faq__header
+          h2 Frequently Asked 
+            br.faq__separator
+            | Questions
+          p What can we help you with?
+        .faq__search-wrapper
+          i.fas.fa-search.faq__icon-search
+          input#js-search.faq__input(type="search" placeholder="Type your question..")
+          button.faq__cta(type="button") Search
+        .faq__wrapper
+          #faq__box--treats
+            .faq__header#js-hide
+              h3 Treats Box
+            ul#js-faq__list
+          #faq__box--order
+            .faq__header#js-hide
+              h3 Orders
+            ul#js-faq__orders
+          #faq__box--shipping
+            .faq__header#js-hide
+              h3 Shipping
+            ul#js-faq__shipping

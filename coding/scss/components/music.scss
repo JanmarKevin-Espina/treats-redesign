@@ -1,0 +1,76 @@
+.music {
+  @apply tablet:pt-[60px] tablet:pb-[100px];
+
+  &__wrapper {
+    @apply flex;
+  }
+
+  &__current {
+    @apply tablet:w-[783px] tablet:mr-4;
+
+    & iframe {
+      @apply tablet:w-full tablet:h-[440px] rounded-[10px];
+    }
+  }
+
+  &__description {
+    @apply tablet:mt-6 tablet:mb-11;
+
+    &-wrapper {
+      @apply flex;
+    }
+
+    &-inside {
+      @apply flex items-center;
+
+      &:first-of-type {
+        @apply mr-5;
+      }
+
+      & span {
+        @apply font-medium
+      }
+    }
+
+    h4 {
+      @apply font-header font-medium tablet:text-3xl text-text-dark tablet:mb-[13px];
+    }
+  }
+
+  &__side {
+    @apply tablet:w-[371px];
+
+    &-item {
+      @apply tablet:mb-4;
+
+      & iframe {
+        @apply w-full tablet:h-[208px] rounded-[10px] mb-[6px];
+      }
+
+      & h5 {
+        @apply font-header font-medium text-base text-text-dark;
+      }
+    }
+  }
+
+  &__icon {
+    @apply block mr-[10px];
+
+    &--calendar {
+      @apply bg-[url('../images/icon-calendar-black.png')] w-[14px] h-[14px] bg-no-repeat;
+    }
+
+    &--clock {
+      @apply bg-[url('../images/icon-clock.png')] w-[13px] h-[13px] bg-no-repeat;
+    }
+  }
+
+  &__lyrics {
+    @apply font-medium text-base;
+    color: rgba(0, 0, 0, 0.66);
+
+    h4 { 
+      @apply font-header font-medium text-xl mb-[20px] text-text-dark;
+    }
+  }
+}
