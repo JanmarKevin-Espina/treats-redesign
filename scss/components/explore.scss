@@ -1,0 +1,82 @@
+.explore {
+  @apply pb-12 tablet:pb-[100px];
+}
+
+.explore__header {
+  @apply mb-[26px] tablet:flex tablet:justify-between tablet:items-center;
+}
+
+.explore__header-right {
+  @apply text-center tablet:text-left;
+}
+
+.explore__header-right h2 {
+  @apply text-center font-header mb-[6px] font-semibold text-3xl text-crimson tablet:text-4xl tablet:text-left;
+}
+
+.explore__header-right p {
+  @apply tablet:text-lg;
+}
+
+.explore__header-left {
+  @apply hidden tablet:block text-xl font-header flex items-center;
+}
+
+.explore__header-left a {
+  @apply flex items-center;
+}
+
+.icon-r-arrow {
+  @apply bg-[url('../images/slider-r-black.png')] w-[18px] h-[18px] inline-block ml-[10px];
+}
+
+.explore__list {
+  @apply tablet:flex tablet:justify-between tablet:items-center;
+}
+
+.explore__list .slick-next,
+.explore__list .slick-prev {
+  @apply z-50 w-auto h-auto top-1/2 -translate-y-1/2;
+}
+
+.explore__list .slick-next {
+  @apply -right-3;
+}
+
+.explore__list .slick-prev {
+  @apply -left-3;
+}
+
+.explore__list .slick-next::before {
+  @apply w-auto h-auto block;
+  content: url('../images/explore-r-arrow.png');
+}
+
+.explore__list .slick-prev::before {
+  @apply w-auto h-auto block;
+  content: url('../images/explore-l-arrow.png');
+}
+
+.explore__item {
+  @apply mx-2 tablet:mx-[15px];
+}
+
+.explore__item a {
+  @apply mx-auto w-full max-w-[375px] block;
+}
+
+.explore__item img {
+  @apply w-full;
+}
+
+.explore__item h2 {
+  @apply mb-[215px] text-center font-header font-semibold text-[26px] text-text-light;
+}
+
+.explore__item button {
+  @apply mx-auto w-full max-w-[194px] tablet:max-w-[170px];
+}
+
+.explore__bottom {
+  @apply flex items-center justify-between mt-[26px] tablet:hidden -z-[1] relative;
+}

@@ -1,0 +1,47 @@
+.banner {
+  @apply relative;
+}
+
+.banner__fill {
+  @apply relative h-[600px] tablet:h-[650px];
+}
+
+.banner__hero {
+  @apply hidden h-full object-cover tablet:block tablet:mx-auto;
+}
+
+.banner__mobile {
+  @apply block h-[600px] w-full object-cover  tablet:hidden;
+}
+
+.main-wrapper--banner {
+  @apply relative;
+}
+
+.banner__card {
+  @apply absolute pb-[30px] bottom-0 left-0 w-full px-3 sp:px-8 tablet:pb-[87px] tablet:max-w-[514px];
+}
+
+.banner__header {
+  @apply text-center font-header font-semibold mb-5 tablet:text-left;
+}
+
+.banner__header h2 {
+  @apply text-[36px] sp:text-[40px] text-secondary leading-none;
+}
+
+.banner__header p {
+  @apply text-[20px] sp:text-[22px] text-light-blue;
+}
+
+.banner__cta {
+  @apply tablet:flex tablet:items-center;
+}
+
+.banner__cta button {
+  @apply mb-[10px] tablet:mb-0 tablet:mr-[30px];
+}
+
+.banner__cta button:last-of-type {
+  @apply tablet:mr-0;
+}

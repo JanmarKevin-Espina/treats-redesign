@@ -1,0 +1,71 @@
+.order {
+  @apply pt-11 pb-[50px] bg-[url('../images/order-banner.png')] bg-center bg-no-repeat bg-cover tablet:pt-[91px] tablet:pb-24;
+}
+
+.order__header {
+  @apply text-center text-text-light mb-[38px] tablet:mb-[54px];
+}
+
+.order__header h2 {
+  @apply font-header font-semibold text-[31px] tablet:text-4xl mb-[6px];
+}
+
+.order__header p {
+  @apply tablet:text-lg;
+}
+
+.order__img {
+  @apply mx-auto mb-11 tablet:mb-0 tablet:mb-0;
+}
+
+.order__card {
+  @apply mb-[30px] tablet:flex tablet:items-center tablet:justify-between tablet:mb-[48px];
+}
+
+.order__box-list {
+  @apply tablet:w-2/4 tablet:max-w-[470px];
+}
+
+.order__cta {
+  @apply tablet:flex tablet:justify-center tablet:items-center text-text-light;
+}
+
+.order__cta button {
+  @apply mb-[10px] tablet:mb-0;
+}
+
+.order__cta button:last-of-type {
+  @apply mb-0;
+}
+
+.order__box {
+  @apply w-full border-2 border-text-light rounded-[10px] tablet:rounded-[15px] block text-text-light flex justify-between items-center py-[19px] pl-5 pr-[18px] mb-[10px] tablet:mb-5 tablet:px-7 tablet:py-[23px];
+}
+
+.order__box:last-of-type {
+  @apply mb-0;
+}
+
+.order__box.order__box--active {
+  @apply bg-secondary;
+}
+
+.order__box-text h3 {
+  @apply font-header font-medium text-[22px] tablet:text-[26px];
+}
+
+.order__box-text p {
+  @apply font-text text-xs tablet:text-base;
+}
+
+.order__box-link {
+  @apply font-header text-sm flex items-center;
+}
+
+.icon-r-arrow-white {
+  @apply bg-[url('../images/r-arrow.png')] w-3 h-3 inline-block ml-[7px];
+}
+
+.order__separator {
+  @apply hidden tablet:inline-block tablet:text-xl tablet:mx-5;
+}

@@ -1,0 +1,45 @@
+.product {
+  @apply pt-[30px] pb-[50px];
+
+  &__list {
+    @apply grid small:grid-cols-2 medium:grid-cols-3 big:grid-cols-4 gap-5 big:gap-[30px];
+  }
+
+  &__highlight {
+    @apply font-text text-sm text-primary mb-9;
+  }
+
+  &__item {
+    @apply bg-product-bg rounded-[15px] p-[30px] hover:bg-secondary;
+
+    &:hover .product__highlight,
+    &:hover .product__header h3,
+    &:hover .product__header p {
+      @apply text-text-light;
+    }
+  }
+
+  &__card img {
+    @apply mx-auto;
+  }
+
+  &__header {
+    @apply text-center mt-[39px];
+
+    & h3 {
+      @apply font-header font-semibold text-[26px] mb-[4px];
+    }
+
+    & p {
+      @apply font-text text-xl text-text-dark-60;
+    }
+  }
+
+  &__show-more {
+    @apply mt-[26px] tablet:mt-[96px] text-center;
+
+    & #next {
+      @apply underline text-base text-text-dark font-medium font-text cursor-pointer;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.box-card {
+  @apply pt-[40px] pb-[50px] tablet:pt-[60px] tablet:pb-[100px] bg-white;
+
+  &__item {
+    @apply bg-product-bg rounded-[15px] p-5 tablet:p-[30px];
+  }
+
+  &__header {
+    h2 {
+      @apply font-header font-medium text-3xl text-light-blue mb-[22px] text-center;
+    }
+
+    p {
+      @apply font-text font-normal text-lg mb-[30px] text-center tablet:max-w-[546px] tablet:mx-auto;
+      color: rgba(45, 67, 87, 0.66);
+    }
+  }
+
+  &__wrapper {
+    @apply tablet:flex gap-x-3 mb-5;
+  }
+
+  &__inside {
+    @apply w-full mb-5 tablet:mb-0;
+
+    input,
+    textarea,
+    select {
+      @apply rounded-[10px] bg-white px-5 py-4 w-full;
+      border-color: rgba(0, 0, 0, 0.10);
+
+      &:focus-visible {
+        @apply outline-none;
+      }
+    }
+
+    label {
+      @apply block font-text text-sm font-medium text-light-blue mb-3 text-left capitalize;
+    }
+  }
+}

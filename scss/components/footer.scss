@@ -1,0 +1,119 @@
+.footer {
+  @apply bg-primary relative;
+}
+
+.footer__contacts {
+  @apply px-6 pt-8 pb-10 tablet:flex tablet:justify-between tablet:pt-7 tablet:px-3 tablet:pb-8;
+}
+
+.footer__contacts::after {
+  @apply absolute translate-y-[37px] tablet:top-[52%] tablet:translate-y-0 w-[98.7vw] h-[1px] left-0;
+  background: rgba(255, 255, 255, 0.20);
+  content: '';
+}
+
+.footer__card {
+  @apply text-center text-text-light tablet:text-left tablet:w-2/4 tablet:pr-4;
+}
+
+.footer__card:last-of-type {
+  @apply pr-0;
+}
+
+.footer__wrapper {
+  @apply tablet:flex tablet:items-center tablet:mt-[9px];
+}
+
+.footer__wrapper button {
+  @apply tablet:max-w-[170px];
+}
+
+.footer__socials {
+  @apply px-6 pt-[30px] pb-8 tablet:px-3 tablet:pb-[42px] tablet:pt-[50px];
+}
+
+.footer__social-wrapper {
+  @apply tablet:flex tablet:justify-between items-center;
+}
+
+.footer__header,
+.footer__email {
+  @apply font-header;
+}
+
+.footer__header {
+  @apply font-semibold text-[29px] sp:text-[32px] mb-[10px] tablet:text-4xl;
+}
+
+.footer__text {
+  @apply mb-5 tablet:mb-0 big:w-[370px];
+}
+
+.footer__email {
+  @apply font-medium text-2xl text-[22px] tablet:text-2xl;
+}
+
+.footer__input-wrapper {
+  @apply relative mb-[10px] mt-[15px] tablet:mr-[21px] tablet:max-w-[379px] tablet:w-full tablet:mt-0 tablet:mb-0;
+}
+
+.icon-email {
+  @apply absolute w-[18px] h-[18px] bg-[url('../images/icon-email.png')] left-5 top-2/4;
+  transform: translateY(-50%);
+}
+
+.footer__input-wrapper input {
+  @apply h-[50px] rounded-[10px] py-4 pr-2 pl-[49px];
+  color: rgba(0, 0, 0, 0.30);
+}
+
+.footer__input-wrapper input:focus-visible {
+  @apply outline-none;
+}
+
+.footer__mobile-logo {
+  @apply mx-auto mb-6 tablet:mb-0;
+}
+
+.footer__links {
+  @apply flex justify-center items-center flex-wrap tablet:px-4 big:pl-[46px] tablet:flex-nowrap;
+}
+
+.footer__links.footer__links--socials {
+  @apply tablet:px-0;
+}
+
+.footer__items {
+  @apply pr-[26px] mb-3 tablet:mb-0;
+}
+
+.footer__items:last-of-type {
+  @apply pr-0;
+}
+
+.footer__items a {
+  @apply text-sm text-text-light hover:underline;
+}
+
+.footer__items.footer__items--socials {
+  @apply pr-10 mb-0;
+}
+
+.footer__items.footer__items--socials:last-of-type {
+  @apply pr-0;
+}
+
+.fa-brands.fa-instagram,
+.fa-brands.fa-twitter,
+.fa-brands.fa-facebook,
+.fa-brands.fa-pinterest {
+  @apply text-text-light text-2xl;
+}
+
+.footer__copyright {
+  @apply text-center flex mt-8 items-center justify-center text-text-light text-xs tablet:mt-2 tablet:justify-start tablet:text-left;
+}
+
+.footer__copyright i {
+  @apply pr-2 tablet:pr-[6px];
+}

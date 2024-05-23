@@ -1,0 +1,155 @@
+.hide-desktop {
+  @apply block tablet:hidden;
+}
+
+.inside-box__header,
+.work__header,
+.office__header {
+  @apply font-header font-semibold text-3xl text-crimson text-center tablet:text-4xl;
+}
+
+.featured,
+.inside-box,
+.work,
+.testimony,
+.header__mobile-nav-wrapper,
+.testimony-social,
+.explore,
+.order,
+.join,
+.office,
+.office__banner-wrapper,
+.breadcrumbs,
+.cart,
+.product,
+.product-view,
+.gift,
+.faq,
+.shop,
+.box-card,
+.music {
+  @apply px-3 sp:px-6;
+}
+
+.banner__cta button,
+.inside-box__bottom button,
+.order__cta button {
+  @apply w-full max-w-[194px] min-w-[194px] mx-auto tablet:max-w-[170px] tablet:min-w-[170px] tablet:w-[170px] tablet:mx-0;
+}
+
+.testimony-social__pagination-dot,
+.explore__pagination-dot,
+.join__pagination-dot {
+  @apply w-3 h-3 rounded-full bg-[#f1f1f1] mx-1 inline-block;
+}
+
+.join__card .slick-dots li button:before,
+.testimony-social__list .slick-dots li button:before,
+.multiple-items .slick-dots li button:before,
+.explore__list .slick-dots li button:before {
+  @apply text-[46px] text-[#f1f1f1] opacity-100;
+}
+
+.join__card .slick-dots li.slick-active button:before,
+.testimony-social__list .slick-dots li.slick-active button:before,
+.multiple-items .slick-dots li.slick-active button:before,
+.explore__list .slick-dots li.slick-active button:before {
+  @apply text-secondary opacity-100;
+}
+
+.join__card.join__card--mobile .slick-prev,
+.join__card.join__card--mobile .slick-next,
+.testimony-social__list.testimony-social__list--mobile .slick-prev,
+.testimony-social__list.testimony-social__list--mobile .slick-next {
+  display: none!important;
+}
+
+.slick-slider {
+  @apply mb-0;
+}
+
+.join__card.slick-slider {
+  margin-bottom: 62px;
+}
+
+.multiple-items .slick-prev,
+.multiple-items .slick-next {
+  @apply w-auto h-auto;
+  display: none!important;
+}
+
+@media screen and (min-width: 767px) {
+  .multiple-items .slick-prev,
+  .multiple-items .slick-next {
+    display: block!important;
+  }
+}
+
+.multiple-items .slick-prev {
+  @apply -left-[65px];
+}
+
+.multiple-items .slick-next {
+  @apply -right-[65px];
+}
+
+.multiple-items .slick-dots {
+  @apply block -bottom-[30px];
+}
+
+@media screen and (min-width: 767px) {
+  .multiple-items .slick-dots {
+    display: none!important;
+  }
+}
+
+.multiple-items .slick-prev::before,
+.multiple-items .slick-next::before {
+  display: block;
+  width: 55px;
+  height: 55px;
+}
+
+.multiple-items .slick-prev::before {
+  content: url('../images/s-prev.png');
+}
+
+.multiple-items .slick-next::before {
+  content: url('../images/s-next.png');
+}
+
+.explore__list .slick-dots {
+  @apply text-left -bottom-[47px] w-auto;
+}
+
+@media screen and (min-width: 767px) {
+  .explore__list .slick-dots {
+    display: none!important;
+  }
+}
+
+.reviewStars {
+  @apply text-[#ffd700];
+}
+
+.testimony-social__pagination-dot--active,
+.explore__pagination-dot--active,
+.join__pagination-dot--active {
+  @apply bg-secondary;
+}
+
+.slick-dots li {
+  @apply m-0;
+}
+
+@media screen and (max-width: 767px) {
+  .animatedParent.animateOnce * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+    opacity: 1;
+    animation-duration: 0ms;
+    transform: none;
+  }
+}

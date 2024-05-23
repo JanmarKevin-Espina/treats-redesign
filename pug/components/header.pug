@@ -1,0 +1,67 @@
+header.header
+  .header__info
+    p Free Shipping in the US. 
+      a(href="#") Get Started 
+  .header__mobile
+    .header__mobile-wrapper
+      button.js-nav-toggle.header__mobile-btn
+      .header__mobile-nav
+        .header__mobile-nav-wrapper
+          ul.header__mobile-nav-list
+            li.header__mobile-nav-item
+              a(href="mypage.html") Home
+            li.header__mobile-nav-item
+              a(href="office.html") Office
+            li.header__mobile-nav-item
+              a(href="#") Past Boxes
+            li.header__mobile-nav-item
+              a(href="shop.html") Shop
+            li.header__mobile-nav-item.uppercase
+              a(href="faq.html") FAQ
+            li.header__mobile-nav-item
+              i.icon-user
+              a(href="login.html") Login
+            li.header__mobile-nav-item
+              i.icon-cart
+              a(href="cart.html") Cart
+          .header__mobile-cta
+            a(href="gift.html")
+              button.button.w-full(class="mb-[10px]") Give a gift
+            a(href="plan.html")
+              button.button.button--secondary.w-full Get Started
+      a(href="mypage.html")
+        img.header__mobile-logo(src="../images/logo.png", alt="Treats logo")
+      button.js-user-toggle
+        img.header__mobile-user(src="../images/user.png", alt="User profile")
+      ul.header__nav-list
+        li.header__nav-item
+          a.header__nav-link(href="#") Logout 
+  .header__desktop
+    .main-wrapper
+      .header__desktop-wrapper
+        .header__inside
+          a.header__logo(href="mypage.html")
+            img(src="../images/logo.png", alt="Treats")
+          nav.nav
+            ul.nav__list
+              li.nav__item
+                a(href="office.html") Office
+              li.nav__item
+                a(href="#") Past Boxes
+              li.nav__item
+                a(href="shop.html") Shop
+              li.nav__item
+                a(href="faq.html") FAQ
+        .header__inside
+            .header__inside
+              a(href="gift.html")
+                button.button.button--40.mr-5 Give a gift
+              a(href="plan.html")
+                button.button.button--secondary.button--40(class="mr-[41px]") Get Started
+            .header__inside
+              .header__center
+                a(href="login.html") Login
+                  i.icon-user.icon-user--desktop
+              .header__center
+                a(href="cart.html") Cart
+                  i.icon-cart.icon-cart--desktop

@@ -1,0 +1,29 @@
+extends layout.pug
+
+block content
+  section.section
+    .box-card
+      .main-wrapper
+        .box-card__item
+          .box-card__header
+            h2 Header Here
+            p We're eager to hear from you! Contact us anytime. Your feedback matters.
+          form(onsubmit="sendEmail(); reset(); return false;" method="POST")
+            .box-card__wrapper
+              .box-card__inside
+                label(for="name") First Name
+                input#firstName(type="text" name="name" placeholder="First Name" required)
+              .box-card__inside
+                label(for="surname") Last Name 
+                input#lastName(type="text" name="surname" placeholder="Last Name" required)
+            .box-card__wrapper
+              .box-card__inside
+                label(for="email") Email Address 
+                input#email(type="email" name="email" placeholder="Email Address")
+            .box-card__wrapper
+              .box-card__inside
+                label(for="message") Message
+                textarea#message(name="message", placeholder="Message for us", rows="4", required, data-error="Please, leave us a message.")
+            .box-card__wrapper
+              .box-card__inside
+                button.button.button--secondary.w-full(type="submit" class="mt-[30px]") Send

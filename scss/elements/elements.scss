@@ -1,0 +1,39 @@
+* {
+  @apply m-0 p-0 box-border;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  @apply scroll-smooth text-base;
+}
+
+html,
+body {
+  @apply h-full font-text;
+}
+
+main {
+  @apply flex flex-col items-stretch h-full;
+}
+
+section,
+.section {
+  @apply grow pt-[99px] big:pt-[112px];
+}
+
+header,
+footer {
+  @apply shrink-0;
+}
+
+.main-wrapper {
+  @apply tablet:max-w-[1170px] tablet:mx-auto;
+
+  &--order {
+    @apply tablet:max-w-[970px];
+  }
+
+  &--gift {
+    @apply tablet:max-w-[770px];
+  }
+}

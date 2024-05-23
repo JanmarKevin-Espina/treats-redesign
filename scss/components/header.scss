@@ -1,0 +1,123 @@
+.header {
+  @apply fixed w-full z-[999] bg-white big:border-b big:border-border-line big:border-solid;
+}
+
+.header__info {
+  @apply flex items-center justify-center font-header bg-crimson text-xs text-text-light py-2 font-normal z-10 relative;
+}
+
+.header__info a {
+  @apply underline;
+}
+
+/* Header mobile */
+.header__mobile {
+  @apply bg-white relative border-b border-border-line border-solid px-3 py-[14px] sp:px-6 z-10 big:hidden relative;
+}
+
+.header__nav-list {
+  @apply hidden absolute bg-white rounded-[10px] right-5 bottom-[-50px];
+}
+
+.header__nav-item {
+  @apply p-[10px] min-w-[100px];
+}
+
+.header__mobile-btn {
+  @apply bg-[url('../images/menu.png')] w-6 h-6;
+}
+
+.header__mobile-btn.open {
+  @apply bg-[url('../images/menu-x.png')] w-6 h-6;
+}
+
+.js-nav-toggle.open + .header__mobile-nav {
+  @apply w-[90%];
+}
+
+.header__mobile-wrapper {
+  @apply flex justify-between items-center;
+}
+
+.header__mobile-menu {
+  @apply block relative w-6 h-[2px] bg-black mt-1;
+}
+
+.header__mobile-nav {
+  @apply fixed z-[1] overflow-x-hidden w-0 top-[99px] left-0 bg-white h-full pt-4;
+  transition: 0.5s;
+}
+
+.header__mobile-nav-item {
+  @apply h-10 pb-4 mb-4 border-b border-solid border-border-line relative flex items-baseline;
+}
+
+.header__mobile-nav-item:last-of-type {
+  @apply border-0;
+}
+
+.header__mobile-nav-item a {
+  @apply font-header font-medium text-xl w-full inline-block;
+}
+
+.header__mobile-nav-item a:after {
+  @apply absolute bg-[url('../images/next.png')] w-[14px] h-[14px] right-0 top-1;
+  content: '';
+}
+
+.icon-user {
+  @apply bg-[url('../images/icon-user-2.png')] w-[22px] h-[22px] inline-block top-1 relative mr-[10px] bg-contain bg-no-repeat;
+}
+
+.icon-cart {
+  @apply bg-[url('../images/icon-cart-2.png')] w-[23px] h-[23px] inline-block relative mr-[10px] top-[5px] bg-contain bg-no-repeat;
+}
+
+/* Header Desktop */
+.header__desktop {
+  @apply hidden px-[10px] pt-[19px] pb-[21px] big:block;
+}
+
+.header__desktop-wrapper {
+  @apply big:flex big:justify-between big:items-center;
+}
+
+.nav {
+  @apply pl-[47px];
+}
+
+.nav__list {
+  @apply flex items-center;
+}
+
+.nav__item {
+  @apply pr-7;
+}
+
+.nav__item:last-of-type {
+  @apply pr-0;
+}
+
+.nav__item a {
+  @apply font-header text-base hover:underline;
+}
+
+.header__inside {
+  @apply flex items-center;
+}
+
+.header__center {
+  @apply mr-[30px] font-header font-medium;
+}
+
+.header__center:last-child {
+  @apply mr-0;
+}
+
+.icon-user.icon-user--desktop {
+  @apply bg-[url('../images/icon-user.png')] w-[18px] h-[18px] inline-block top-1 relative ml-[10px] mr-0;
+}
+
+.icon-cart.icon-cart--desktop {
+  @apply bg-[url('../images/icon-cart.png')] w-[20px] h-[20px] inline-block relative ml-[10px] top-[5px] mr-0;
+}

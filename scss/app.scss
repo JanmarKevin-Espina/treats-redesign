@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './elements/elements';
+@import './components/button';
+@import './components/common';
+@import './components/header';
+@import './components/footer';
+@import './components/login';
+@import './components/banner';
+@import './components/featured';
+@import './components/inside-box';
+@import './components/work';
+@import './components/testimony';
+@import './components/explore';
+@import './components/order';
+@import './components/join';
+@import './components/office';
+@import './components/breadcrumbs';
+@import './components/cart';
+@import './components/product';
+@import './components/product-view';
+@import './components/gift';
+@import './components/faq';
+@import './components/shop';
+@import './components/box-card';
+@import './components/music';
+
+#js-faq__list,
+#js-faq__orders,
+#js-faq__shipping {
+  @apply mb-5;
+}

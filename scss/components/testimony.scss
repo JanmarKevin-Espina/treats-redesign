@@ -1,0 +1,79 @@
+.testimony {
+  @apply pb-[50px] pt-[43px] bg-primary tablet:py-[69px] tablet:px-20;
+}
+
+.testimony__header {
+  @apply mb-10;
+}
+
+.testimony__header h3 {
+  @apply font-header font-semibold text-3xl text-white mx-auto tablet:w-full text-center tablet:text-4xl;
+}
+
+.testimony__separator {
+  @apply block tablet:hidden;
+}
+
+.testimony__item {
+  @apply text-center text-white;
+}
+
+.testimony__highlight {
+  @apply text-2xl font-semibold mb-[31px];
+}
+
+.testimony__content {
+  @apply text-xl font-medium mb-[29px] tablet:max-w-[674px] tablet:mx-auto;
+}
+
+.testimony__author {
+  @apply font-semibold mt-4 mb-[35px] tablet:text-lg tablet:mb-0;
+}
+
+.testimony__pages {
+  @apply text-center tablet:hidden;
+}
+
+.testimony__dot {
+  @apply cursor-pointer inline-block w-3 h-3 rounded-full bg-white mx-[5px];
+}
+
+.testimony__dot.testimony__dot--active {
+  @apply bg-secondary;
+}
+
+.testimony-social {
+  @apply pt-5 pb-[43px] tablet:pt-[30px] tablet:pb-[72px];
+
+  &--component {
+    @apply pb-0 tablet:pb-0;
+  }
+}
+
+.testimony-social__list {
+  @apply hidden tablet:block tablet:flex mb-[30px] tablet:mb-0;
+}
+
+.testimony-social__list.testimony-social__list--mobile {
+  @apply block tablet:hidden;
+}
+
+.testimony-social__card {
+  @apply tablet:mr-[30px];
+}
+
+.testimony-social__list.testimony-social__list--mobile .testimony-social__card{
+  @apply mx-2;
+}
+
+.testimony-social__card:last-of-type {
+  @apply tablet:mr-0;
+}
+
+.testimony-social__link img {
+  @apply mx-auto w-full max-w-[375px] tablet:max-w-full;
+}
+
+.testimony-social__pagination {
+  @apply flex justify-center tablet:hidden;
+}
