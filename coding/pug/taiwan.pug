@@ -1,0 +1,103 @@
+extends layout.pug
+
+block content
+  section.section
+    .breadcrumbs
+      h2.uppercase Music
+      ul.breadcrumbs__list
+        li.breadcrumbs__item Home
+        li.breadcrumbs__item.uppercase Music
+    .music
+      .main-wrapper
+        .music__wrapper
+          .music__current
+            iframe(src="https://www.youtube.com/embed/videoseries?list=PLiwkmHKzRwO0kkm_0ma6FgZsi6XmNSjTV", title="YouTube video player", frameborder="0", allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen)
+            .music__description 
+              h4 Taiwan Music / F4
+              .music__description-wrapper
+                .music__description-inside
+                  i.music__icon.music__icon--calendar
+                  span Aug 28, 2001
+                .music__description-inside
+                  i.music__icon.music__icon--clock
+                  span 4:32
+            .music__lyrics
+              h4 Lyrics
+              .mb-2
+                p Wēnróu de xīngkōng
+                p yīnggāi ràng nǐ gǎndòng
+                p wǒ zài nǐ shēn páng
+                p wèi nǐ bùzhì yīpiàn tiānkōng
+                p bù zhǔn nǐ nánguò
+              .mb-2 
+                p tì nǐ bǎipíng jìmò
+                p mèngxiǎng de zhòngliàng
+                p quánbù dōu jiāo gěi wǒ
+                p qiān nǐ shǒu
+                p gēnzhe wǒ zǒu
+                p Fēng zài dà yòu zěnyàng
+              .mb-2 
+                p nǐ yǒule wǒ
+                p zài yě bù huì mílù fāngxiàng
+                p péi nǐ qù kàn liúxīngyǔ luò zài zhè dìqiú shàng
+                p ràng nǐ de lèi luò zài wǒ jiānbǎng
+                p yào nǐ xiāngxìn wǒ de ài zhǐ kěn wèi nǐ yǒnggǎn
+              .mb-2 
+                p nǐ huì kànjiàn xìngfú de suǒzài
+                p shānggǎn ruò tài duō
+                p xīn diū gěi wǒ bǎohù
+                p píjuàn de yānhuǒ
+                p Wǒ huì tì nǐ dōu gǎn zǒu
+                p cànlàn de yányǔ
+              .mb-2 
+                p zhǐ néng diǎnzhuì gǎnqíng
+                p rúguǒ wǒ chénmò
+                p yīnwèi wǒ zhēn de ài nǐ
+                p zhūxiàotiān: Qiān nǐ shǒu gēnzhe wǒ zǒu
+                p fēng zài dà yòu zěnyàng
+                p nǐ yǒule wǒ zài yě bù huì mílù fāngxiàng
+                p péi nǐ qù kàn liúxīngyǔ luò zài zhè dìqiú shàng
+              .mb-2 
+                p ràng nǐ de lèi luò zài wǒ jiānbǎng
+                p Yào nǐ xiāngxìn wǒ de ài zhǐ kěn wèi nǐ yǒnggǎn
+                p nǐ huì kànjiàn xìngfú de suǒzài
+                p yǔ hé yún jiànjiàn sàn kāi
+                p sǎ xià yīpiàn wēnnuǎn
+                p wǒ yào fēnxiǎng nǐ yǎnzhōng de lèi guāng
+                p péi nǐ qù kàn liúxīngyǔ luò zài zhè dìqiú shàng
+              .mb-2 
+                p ràng nǐ de lèi luò zài wǒ jiānbǎng
+                p yào nǐ xiāngxìn wǒ de ài zhǐ kěn wèi nǐ yǒnggǎn
+                p nǐ huì kànjiàn xìngfú de suǒzài
+                p péi nǐ qù kàn liúxīngyǔ luò zài zhè dìqiú shàng
+                p Ràng nǐ de lèi luò zài wǒ jiānbǎng
+                p yào nǐ xiāngxìn wǒ de ài zhǐ kěn wèi nǐ yǒnggǎn
+                p nǐ huì kànjiàn
+                p xìngfú de suǒzài
+                p nǐ huì kànjiàn
+                p xìngfú de suǒzài
+          .music__side
+            .music__side-item
+              a(href="music.html") 
+                iframe(src="https://www.youtube.com/embed/xdsqWCG2wxU?si=KuixC5ofF97HBil8", title="YouTube video player", frameborder="0", allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture", allowfullscreen)
+                h5 Italy Music
+            .music__side-item
+              a(href="phil.html") 
+                iframe(src="https://www.youtube.com/embed/E5Sgxp7K7BQ?si=7ttvQ_T1LQqGm1Oj", title="YouTube video player", frameborder="0", allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen)
+                h5 Philippines Music
+            .music__side-item
+              a(href="#") 
+                iframe(src="https://www.youtube.com/embed/QgxJiSSLX0k?si=oovUehOSneVZJx0s&controls=0", title="YouTube video player", frameborder="0", allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen)
+                h5 Peruvian Music
+            .music__side-item
+              a(href="#") 
+                iframe(src="https://www.youtube.com/embed/9II3OGZETo4?si=FVhLdVXq3-8EZb3M", title="YouTube video player", frameborder="0", allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen)
+                h5 Indonesia Music
+            .music__side-item
+              a(href="#") 
+                iframe(src="https://www.youtube.com/embed/DDOs_6tRNqM?si=olrBj2O8Ah84Cu-c", title="YouTube video player", frameborder="0", allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen)
+                h5 Malaysia Music
+            .music__side-item
+              a(href="#") 
+                iframe(src="https://www.youtube.com/embed/ckObp0fTNmU?si=emfmxZiUXzA9Apch", title="YouTube video player", frameborder="0", allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowfullscreen)
+                h5 Israel Music

@@ -95,8 +95,11 @@ const shippingData = [
 ]
 const search = document.getElementById("js-search");
 const results = document.getElementById("js-faq__list");
+const orders = document.getElementById("js-faq__orders");
+const shipping = document.getElementById("js-faq__shipping");
 let search_term = "";
 const acc = document.getElementsByClassName("faq__accordion");
+const hide = document.getElementById("js-hide");
 var i;
 
 const accordionList = () => {
@@ -134,11 +137,70 @@ const showList = () => {
     });
 }
 
+const showOrders = () => {
+  orders.innerHTML = "";
+  ordersData
+    .filter((item) => {
+      return (
+        item.question.toLowerCase().includes(search_term)
+      );
+    })
+    .forEach((e) => {
+      const li = document.createElement("li");
+      li.classList.add("faq__card");
+      li.innerHTML = 
+      `
+        <button class="faq__accordion">${e.question}</button>
+        <div class="faq__panel">
+          <p>${e.details}</p>
+        </div>`;
+      orders.appendChild(li);
+    });
+}
+
+const showShipping = () => {
+  shipping.innerHTML = "";
+  shippingData
+    .filter((item) => {
+      return (
+        item.question.toLowerCase().includes(search_term)
+      );
+    })
+    .forEach((e) => {
+      const li = document.createElement("li");
+      li.classList.add("faq__card");
+      li.innerHTML = 
+      `
+        <button class="faq__accordion">${e.question}</button>
+        <div class="faq__panel">
+          <p>${e.details}</p>
+        </div>`;
+      shipping.appendChild(li);
+    });
+}
+
 showList();
+showOrders();
+showShipping();
 
 search.addEventListener("input", (event) => {
+  // if (hide.style.display === "none") {
+  //   hide.style.display = "block";
+  // } else {
+  //   hide.style.display = "none";
+  // }
+
+  if (search.value > 0) {
+    hide.style.display = "none";
+  } else {
+    hide.style.display = "block";
+  }
+
+  console.log(search.value.length);
   search_term = event.target.value.toLowerCase();
   showList();
+  showOrders();
+  showShipping();
   accordionList();
 });
 

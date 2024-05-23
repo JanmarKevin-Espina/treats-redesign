@@ -24,3 +24,11 @@
 @import './components/gift';
 @import './components/faq';
 @import './components/shop';
+@import './components/box-card';
+@import './components/music';
+
+#js-faq__list,
+#js-faq__orders,
+#js-faq__shipping {
+  @apply mb-5;
+}
